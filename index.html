@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>Bernoulli function test</title>
+<script type="text/javascript" src="BernoulliP.js"></script>
+
+<script>
+function Bnl(){
+	var p = document.getElementById("pbblt").value;
+	var n = document.getElementById("tt").value;
+	var k = document.getElementById("kk").value;
+	document.getElementById("rz").innerHTML = Bernoulli(p, n, k).toString();
+}
+</script>
+
+</head>
+<body>
+	<p>
+	p(0 &lt p &lt 1):
+	<input type="text" id="pbblt">
+	</p>
+	<p>
+	n:
+	<input type="text" id="tt">
+	</p>
+	<p>
+	k(1 ≤ k ≤ n):
+	<input type="text" id="kk">
+	</p>
+	<p>
+	<button id="run" type="button" onclick="Bnl()">Calculate</button>
+	</p>
+	<p id="rz"></p>
+</body>
+</html>
