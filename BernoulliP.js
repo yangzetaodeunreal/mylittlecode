@@ -13,7 +13,7 @@ function PmttACbnt(n, m){
 function Factorial(n){
 	if(!(n >= 1))
 		return false;
-	var result = 1;
+	let result = 1;
 	while(n)
 		result *= n--;
 	return result;
